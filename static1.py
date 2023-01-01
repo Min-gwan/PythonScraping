@@ -6,7 +6,7 @@ url3 = 'https://www.google.com/'
 response = requests.get(url3)
 print("응답코드 :", response.status_code)
 
-if response.status_code == requests.codes.ok:
+if response.status_code == requests.codes.ok: # or 200
     print("정상입니다")
 else:
     print("문제가 생겼습니다. [에러코드 ",response.status_code, "]")
